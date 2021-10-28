@@ -1,16 +1,19 @@
 {% layout "layout.liquid" %}
 {% block content %}
 
-<div>
+<div id ="animal-list">
     {% for animal in animals %}
         <article>
             <a href="/animals/{{ animal._id }}">
                 <h2>{{animal.name}}</h2>
+                <h3>{{animal.species}}</h3>
                 <ul>
                     <img src="{{animal.img}}"> 
-                    <li>{{animal.gender}}</li>
-                    <li>{{animal.age}}</li>
-                    <li>{{animal.breed}}</li>
+                    <li>Gender: {{animal.gender}}</li>
+                    <li>Age: {{animal.age}}</li>
+                    <li>Breed: {{animal.breed}}</li>
+                    <li>Neutered/Spayed: {{animal.neuteredSpayed}}</li>
+                    <li>On-Hold(pending-foster): {{animal.onHold}}</li>
                 </ul>
         </article>
     {% endfor %}

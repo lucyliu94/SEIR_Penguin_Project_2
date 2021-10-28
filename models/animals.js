@@ -9,9 +9,11 @@ const mongoose = require("./connection")
 const {Schema, model} = mongoose
 
 const animalSchema = new Schema({
+    species: String,
     name: String,
+    img: String,
     gender: String,
-    Age: Number,
+    age: String,
     breed: [String],
     neuteredSpayed: Boolean,
     onHold: Boolean,

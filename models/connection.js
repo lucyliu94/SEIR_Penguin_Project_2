@@ -1,14 +1,14 @@
 /////////////////////////////////////
 // Import Our Dependencies
 /////////////////////////////////////
-require("dotenv").config() // Loading .env variables
+require("dotenv").config() 
 const mongoose = require("mongoose")
 
 /////////////////////////////////////
 // Establish Database Connection
 /////////////////////////////////////
 // setup the inputs for mongoose connect
-const DATABASE_URL = process.env.DATABASE_URL // url from .env
+const DATABASE_URL = process.env.DATABASE_URL 
 const CONFIG = {
     useNewUrlParser: true,
     useUnifiedTopology: true

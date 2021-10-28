@@ -2,4 +2,24 @@
 {% block content %}
 
 
+<a href ="/animals">Back to All Animals</a>
+<div>
+    <a href="/animals/{{animal._id}}/edit"><button>Edit Animal</button></a>
+    <form action="/animals/{{ fruit._id }}?_method=DELETE" method="post">
+    <input type="submit" value="DELETE">
+    <h2>{{animal.name}}</h2>
+    <h4>{{animal.species}}</h4>
+    <img src="{{animal.img}}">
+</div>
+
+<div>
+    <ul>
+        <li>{{animal.gender}}</li>
+        <li>{{animal.age}}</li>
+        <li>{{animal.breed}}</li>
+        <li>{{animal.neuteredSpayed}}</li>
+        <li>{{animal.onHold}}</li>
+    </ul>
+</div>
+
 {% endblock %}

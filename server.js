@@ -2,16 +2,14 @@
 // Import dependencies
 ////////////////////////
 const express = require("express")
-const path = require("path") // helper functions for file paths
+const path = require("path")
 require("dotenv").config()
 const methodOverride = require("method-override")
 const mongoose = require("mongoose")
 const AnimalRouter = require("./controllers/animals")
 
-// construct an absolute path to our views folder 
 const viewsFolder = path.resolve(__dirname, "views/")
 
-// create an app object with liquid, passing the path to the views folder
 const app = require("liquid-express-views")(express(), {root: viewsFolder})
 
 ////////////////////////
