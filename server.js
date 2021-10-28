@@ -6,7 +6,7 @@ const path = require("path") // helper functions for file paths
 require("dotenv").config()
 const methodOverride = require("method-override")
 const mongoose = require("mongoose")
-const AnimalRouter = require("./controllers/products")
+const AnimalRouter = require("./controllers/animals")
 
 // construct an absolute path to our views folder 
 const viewsFolder = path.resolve(__dirname, "views/")

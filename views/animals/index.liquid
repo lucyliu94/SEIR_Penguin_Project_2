@@ -1,5 +1,19 @@
 {% layout "layout.liquid" %}
 {% block content %}
 
+<div>
+    {% for animal in animals %}
+        <article>
+            <a href="/animals/{{ animal._id }}">
+                <h2>{{animal.name}}</h2>
+                <ul>
+                    <img src="{{animal.img}}"> 
+                    <li>{{animal.gender}}</li>
+                    <li>{{animal.age}}</li>
+                    <li>{{animal.breed}}</li>
+                </ul>
+        </article>
+    {% endfor %}
+</div>
 
 {% endblock %}
