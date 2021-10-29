@@ -58,7 +58,9 @@ My app will include two models: cat and dog.
 
 
 ## Challenges
-#### TBD
+I ran into some issues with my carousel. I just needed to make sure my scripts were properly added to layout.liquid file.
+
+I levereged bootstrap for the first time and it felt a bit difficult to digest all the documentation. I finally incorporated it with the carousel I added as well as display cards in my index route. 
 
 ## Conclusion
 #### TBD
