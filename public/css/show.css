@@ -1,0 +1,36 @@
+
+* {
+    outline: 1px dotted black;
+}
+
+.icons{
+    display:flex; 
+    justify-content: right;
+    margin-right: 10px;
+}
+.animal-title{
+    margin: 20px;
+    padding-bottom: 25px;
+}
+
+
+.animal-page {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+.animal-content {
+    margin: 20px;
+    text-align: left;
+}
+
+.animal-content ul{
+       list-style-type: none;
+   }
+
+.show-footer{
+    margin:5%;
+    text-align: center;
+}
+

@@ -27,7 +27,6 @@ app.use(session({
     store: MongoStore.create({mongoUrl: process.env.DATABASE_URL}),
     resave: false
 }))
-
 ////////////////////////
 // Routes
 ////////////////////////
