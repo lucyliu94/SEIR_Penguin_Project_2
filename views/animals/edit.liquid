@@ -8,14 +8,14 @@
 
     <fieldset>
         <legend>Edit: {{animal.name}}</legend>
-            <label>Species: <input type="text" name="species"></label>
-            <label>Name: <input type="text" name="name"></label>
-            <label>Image: <input type="text" name="img"></label>
-            <label>Gender: <input type="text" name="gender"></label>
-            <label>Age: <input type="text" name="age"></label>
-            <label>Breed: <input type="text" name="breed"></label>
-            <label>Neutered/Spayed: <input type="text" name="neutered/spayed"></label>
-            <label>On-Hold: <input type="text" name="on-hold"></label>
+            <label>Species: <input type="text" value="{{animal.species}}" name="species"></label>
+            <label>Name: <input type="text" value="{{animal.name}}" name="name"></label>
+            <label>Image: <input type="text" value="{{animal.img}}" name="img"></label>
+            <label>Gender: <input type="text" value="{{animal.gender}}" name="gender"></label>
+            <label>Age: <input type="text" value="{{animal.age}}"name="age"></label>
+            <label>Breed: <input type="text" value="{{animal.breed}}" name="breed"></label>
+            <label>Neutered/Spayed: <input type="text" value="{{animal.neuteredSpayed}}" name="neutered/spayed"></label>
+            <label>On-Hold: <input type="text" value="{{animal.onHold}}"name="on-hold"></label>
             <input type="submit" value="update {{animal.name}}">    
     </fieldset>
 
@@ -23,8 +23,6 @@
 
     <a href ="/animals">Back to All Animals</a>
 </div>
-
-
 
 {% endblock %}
 

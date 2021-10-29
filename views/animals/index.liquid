@@ -1,22 +1,82 @@
 {% layout "layout.liquid" %}
 {% block content %}
 
-<div id ="animal-list">
-    {% for animal in animals %}
-        <article>
-            <a href="/animals/{{ animal._id }}">
-                <h2>{{animal.name}}</h2>
-                <h3>{{animal.species}}</h3>
-                <ul>
-                    <img src="{{animal.img}}"> 
-                    <li>Gender: {{animal.gender}}</li>
-                    <li>Age: {{animal.age}}</li>
-                    <li>Breed: {{animal.breed}}</li>
-                    <li>Neutered/Spayed: {{animal.neuteredSpayed}}</li>
-                    <li>On-Hold(pending-foster): {{animal.onHold}}</li>
-                </ul>
-        </article>
-    {% endfor %}
+
+<div>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://g.petango.com/photos/1686/d8fd9fef-943a-4f86-8521-19a14781b5f7.jpg" class="rounded mx-auto d-block" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Gumaro</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <img src="https://g.petango.com/photos/1686/80ba691b-d79d-448a-be24-3f86c706b0cd.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Rosalia</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+            <span class="sr-only"></span>
+            <span class="carousel-control-prev-icon" visually-hidden="true"></span>
+        </a>
+        <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+            <span class="sr-only"></span>
+            <span class="carousel-control-next-icon" visually-hidden="true"></span>
+        </a>
+
+    </div>
+</div>
+
+
+<div class="index-route">
+
+    <h1 class="text-center">VIEW ALL BELOW</h1>
+    <div class="container">
+    <div class="row">
+
+        {% for animal in animals %}
+
+            <div class="col mb-5">
+                <div class="card" style="width: 20rem">
+                    <a href="/animals/{{ animal._id }}">
+
+                    <img src="{{animal.img}}" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title">{{animal.name}}</h2>
+                                <p class="card-text">{{animal.species}}</p>
+                            </div>
+                    </a>                     
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Gender: {{animal.gender}}</li>
+                                    <li class="list-group-item">Age: {{animal.age}}</li>
+                                    <li class="list-group-item">Breed: {{animal.breed}}</li>
+                                    <li class="list-group-item">Neutered/Spayed: {{animal.neuteredSpayed}}</li>
+                                    <li class="list-group-item">On-Hold(pending-foster): {{animal.onHold}}</li>
+                                </ul>
+                            </div>
+
+            </div>
+        {% endfor %}
+
+    </div>
+    </div>
 </div>
 
 {% endblock %}
+
+
+
+
+
+

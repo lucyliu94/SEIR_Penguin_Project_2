@@ -2,17 +2,17 @@
 {% block content %}
 
 <form action="/animals" method="POST">
-    
+
 <fieldset>
 <legend>Add a New Animal</legend>
-    <label>Species: <input type="text" name="species"></label>
-    <label>Name: <input type="text" name="name"></label>
-    <label>Image: <input type="text" name="img"></label>
-    <label>Gender: <input type="text" name="gender"></label>
-    <label>Age: <input type="text" name="age"></label>
-    <label>Breed: <input type="text" name="breed"></label>
-    <label>Neutered/Spayed: <input type="text" name="neutered/spayed"></label>
-    <label>On-Hold: <input type="text" name="on-hold"></label>
+    <label>Species: <input type="text" name="species" placeholder="Cat or Dog or Other"></label>
+    <label>Name: <input type="text" name="name" placeholder="Name of Animal"></label>
+    <label>Image: <input type="text" name="img" placeholder="Add Image"></label>
+    <label>Gender: <input type="text" name="gender" placeholder="Gender"></label>
+    <label>Age: <input type="text" name="age" placeholder="Age"></label>
+    <label>Breed: <input type="text" name="breed" placeholder="Add Animal Breed"></label>
+    <label>Neutered/Spayed: <input type="text" name="neutered/spayed" placeholder="Neutered or Spayed?" ></label>
+    <label>On-Hold: <input type="text" name="on-hold" placeholder="Pending foster?"></label>
     <input type="submit" value="Submit New Animal">
 </fieldset>
 
