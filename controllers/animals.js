@@ -11,9 +11,24 @@ const Animal = require("../models/animals");
 const router = express.Router();
 
 
+/////////////////////////////////
+// Router Middleware
+/////////////////////////////////
+
+// middleware to check if user is logged in
+router.use((req, res, next) => {
+    if (req.session.loggedIn){
+        // send to routes
+        next()
+    } else {
+        res.redirect("/user/login")
+    }
+})
+
+
 // Index route
 router.get("/", (req, res)=>{
-    Animal.find({})
+    Animal.find({username: req.session.username})
     .then((animals)=>{
         res.render("animals/index.liquid", {animals})
     })
