@@ -1,11 +1,13 @@
 {% layout "layout.liquid" %}
 {% block content %}
 <link rel="stylesheet" href="/css/show.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 
 <div class="icons">
-<a href="/animals/{{animal._id}}/edit"><button>⚙️</button></a>
+<a href="/animals/{{animal._id}}/edit" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-cog"></span></a>
     <form action="/animals/{{animal._id}}?_method=DELETE" method="post">
-    <input type="submit" value="🗑">
+    <button class="btn btn-info btn-sm" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
 </div>
 
 <h1 class="text-center animal-title">{{animal.name}}</h1>

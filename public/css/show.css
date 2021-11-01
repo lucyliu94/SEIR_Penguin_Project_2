@@ -1,8 +1,11 @@
-
+/* 
 * {
     outline: 1px dotted black;
-}
+} */
 
+.btn{
+margin: 1px;
+}
 .icons{
     display:flex; 
     justify-content: right;

@@ -1,4 +1,7 @@
 /* NAVBAR */
+*{
+    font-family: Roboto; 
+}
 .nav-custom {
    margin: .25em;
 }
