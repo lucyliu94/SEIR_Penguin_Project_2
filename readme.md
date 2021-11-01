@@ -62,5 +62,6 @@ I ran into some issues with my carousel. I just needed to make sure my scripts w
 
 I levereged bootstrap for the first time and it felt a bit difficult to digest all the documentation. I finally incorporated it with the carousel I added as well as display cards in my index route. 
 
-## Conclusion
-#### TBD
+I also ran into the hiccup where my styles were not all being picked up by the public styles css page. I ended up making individual CSS pages for each individual page. 
+
+

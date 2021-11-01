@@ -2,6 +2,9 @@
 {% block content %}
 
 <style>
+body {
+  background-color: #D0E8F2;
+}
     .container {
     margin-top: 5%;
 }
@@ -10,7 +13,13 @@ legend {
     margin: 20px;
     font-weight: 500;
 }
+
+form {
+    margin-top: 10%;
+}
+
 fieldset {
+    background-color: #A4EBF3;
     border: 1px solid #ccc;
     padding: 20px;
     width: 40%;
@@ -33,19 +42,22 @@ input {
 }
 </style>
 
-<div>
-<form action="/user/signup" method="post">
-<fieldset>
-<legend>New User</legend>
-<label>
-    Username: <input type="text" name="username" required/> 
-</label>
-<label>
-    Password: <input type="password" name="password" required/>
-</label>
-<input type="submit" value="Create Account"/>
-</fieldset>
+<body>
+    
+        <form action="/user/signup" method="post">
+        <fieldset>
+        <legend>New User</legend>
+        <label>
+            Username: <input type="text" name="username" required/> 
+        </label>
+        <label>
+            Password: <input type="password" name="password" required/>
+        </label>
+        <input type="submit" value="Create Account"/>
+        </fieldset>
+        
+        </form>
+    
+</body>
 
-</form>
-</div>
 {% endblock %}

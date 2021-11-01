@@ -2,6 +2,20 @@
 {% block content %}
 <link rel="stylesheet" href="/css/edit.css">
 
+<style>
+    h2 {
+        margin: 2%;
+        text-align: center;
+    }
+
+    .return-page {
+        text-align: center;
+        margin: 2%;
+    }
+
+
+</style>
+
 <div>
     <h2>Edit Animal</h2>
 
@@ -17,12 +31,15 @@
             <label>Breed: <input type="text" value="{{animal.breed}}" name="breed"></label>
             <label>Neutered/Spayed: <input type="text" value="{{animal.neuteredSpayed}}" name="neutered/spayed"></label>
             <label>On-Hold: <input type="text" value="{{animal.onHold}}"name="on-hold"></label>
-            <input type="submit" value="update {{animal.name}}">    
+            <input type="submit" value="Update {{animal.name}}">    
     </fieldset>
 
     </form> 
 
-    <a href ="/animals">Back to All Animals</a>
+    <div class="return-page">
+        <a href ="/animals">Back to All Animals</a>
+    </div>
+    
 </div>
 
 {% endblock %}

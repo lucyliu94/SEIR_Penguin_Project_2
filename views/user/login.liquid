@@ -2,6 +2,9 @@
 {% block content %}
 
 <style>
+body {
+  background-color: #D0E8F2;
+}
     .container {
     margin-top: 5%;
 }
@@ -10,7 +13,12 @@ legend {
     margin: 20px;
     font-weight: 500;
 }
+
+form {
+    margin-top: 10%;
+}
 fieldset {
+    background-color: #A4EBF3;
     border: 1px solid #ccc;
     padding: 20px;
     width: 40%;
@@ -33,7 +41,7 @@ input {
 }
 </style>
 
-<div>
+<body>
 
 <form action="/user/login" method="post">
 <fieldset>
@@ -48,6 +56,6 @@ input {
 </fieldset>
 </form>
 
-</div>
+</body>
 
 {% endblock %}

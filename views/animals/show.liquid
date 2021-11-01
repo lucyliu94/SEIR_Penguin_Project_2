@@ -1,13 +1,14 @@
 {% layout "layout.liquid" %}
 {% block content %}
+
 <link rel="stylesheet" href="/css/show.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-
+<body>
 <div class="icons">
-<a href="/animals/{{animal._id}}/edit" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-cog"></span></a>
+<a href="/animals/{{animal._id}}/edit" class="btn btn-info btn-sm btn-custom"><span class="glyphicon glyphicon-cog"></span></a>
     <form action="/animals/{{animal._id}}?_method=DELETE" method="post">
-    <button class="btn btn-info btn-sm" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
+    <button class="btn btn-info btn-sm btn-custom" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
 </div>
 
 <h1 class="text-center animal-title">{{animal.name}}</h1>
@@ -18,7 +19,7 @@
     </div>
 
     <div class="animal-content">
-        <h2 class="text-center">FACTS ABOUT ME</h2>
+        <h2 class="text-center">FACTS ABOUT ME</h2><br>
         <ul>
             <li>Gender: {{animal.gender}}</li>
             <li> Age: {{animal.age}}</li>
@@ -33,7 +34,6 @@
     <a href ="/animals">Back to All Animals</a>
 </div>
 
-<h3 class="text-center">Other Pet's to Rescue</h3>
-
+</body>
 
 {% endblock %}

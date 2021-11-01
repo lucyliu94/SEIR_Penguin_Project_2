@@ -1,22 +1,13 @@
 /* NAVBAR */
-*{
+* {
     font-family: Roboto; 
-}
-.nav-custom {
-   margin: .25em;
 }
 
 /* INDEX CAROUSEL ROUTE */
 
 .carousel-item{
-    padding-top: 40px;
-    height: 32rem;
-    background-color: lightgrey;
+    height: 25rem;
     position: relative;
-}
-
-.carousel-inner{
-    background-color: black;
 }
 
 .carousel-caption {
@@ -39,3 +30,18 @@
     object-fit: cover;
 }
 
+
+#myCarousel{
+    background-color: #A4EBF3;
+    width: 50%;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 5%;
+    border: 2px solid grey;
+    box-shadow: 1px 1px 10px #bbb,
+                  -1px -1px 10px #bbb,
+                  1px -1px 10px #bbb,
+                  -1px 1px 10px #bbb;
+  }
+  
