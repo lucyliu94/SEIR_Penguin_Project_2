@@ -7,8 +7,11 @@ legend {
     margin: 20px;
     font-weight: 500;
 }
-
+body {
+    background-color: #D0E8F2;
+  }
 fieldset {
+    background-color: #A4EBF3;
     border: 1px solid #ccc;
     padding: 20px;
     width: 40%;
